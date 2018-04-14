@@ -11,6 +11,14 @@ try:
 except ModuleNotFoundError:
 	print("будласка встановіть бібліотеки\npip install -r requirements.txt\n")
 	exit()
+	
+#------------------	
+_version_ = "2.0 release"
+portsfile = "ports.txt"
+hostsfile = "hosts.txt"
+goodip = []
+diapazons = []
+ports = []
 #------------------
 def restart_program():
 	python = sys.executable
