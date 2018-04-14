@@ -44,6 +44,8 @@ def pload():
 def main():
 	pload()
 	dload()
+	print(diapazons)
+	print(ports)
 if __name__ == "__main__":
 	try:
 		main()
