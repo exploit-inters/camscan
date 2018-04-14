@@ -24,6 +24,20 @@ def restart_program():
 	python = sys.executable
 	os.execl(python, python, * sys.argv)
 	curdir = os.getcwd()
+def dload():	
+	f = open(hostsfile, 'r')
+	for line in f:
+		l = line.strip()
+		diapazons.append(str(l))
+	f.close()
+	
+def pload():
+	f = open(portsfile, 'r')
+	for line in f:
+		l = line.strip()
+		ports.append(str(l))
+	f.close()
+	
 
 	
 	
