@@ -11,14 +11,15 @@ try:
 except ModuleNotFoundError:
 	print("будласка встановіть бібліотеки\npip install -r requirements.txt\n")
 	exit()
+#------------------
+def restart_program():
+	python = sys.executable
+	os.execl(python, python, * sys.argv)
+	curdir = os.getcwd()
 
-
-	
-
 	
 	
-	
-	
+		
 def main():
 	pass
 if __name__ == "__main__":
