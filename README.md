@@ -9,6 +9,9 @@ git clone https://github.com/gornostay25/camscan
 cd camscan
 pip install -r requirements.txt 
 python camscan.py 
-``` or ```
+``` 
+or
+
+```
 chmod +x camscan.py
 ./camscan.py
