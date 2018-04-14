@@ -10,8 +10,3 @@ cd camscan
 pip install -r requirements.txt 
 python camscan.py 
 ``` 
-or
-
-```
-chmod +x camscan.py
-./camscan.py
