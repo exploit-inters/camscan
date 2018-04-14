@@ -11,8 +11,8 @@ try:
 except ModuleNotFoundError:
 	print("будласка встановіть бібліотеки\npip install -r requirements.txt\n")
 	exit()
-	
-#------------------	
+
+#------------------
 _version_ = "1.0 beta"
 portsfile = "ports.txt"
 hostsfile = "hosts.txt"
@@ -24,26 +24,26 @@ def restart_program():
 	python = sys.executable
 	os.execl(python, python, * sys.argv)
 	curdir = os.getcwd()
-def dload():	
+def dload():
 	f = open(hostsfile, 'r')
 	for line in f:
 		l = line.strip()
 		diapazons.append(str(l))
 	f.close()
-	
+	return
+
 def pload():
 	f = open(portsfile, 'r')
 	for line in f:
 		l = line.strip()
 		ports.append(str(l))
 	f.close()
-	
+	return
 
-	
-	
-		
+
 def main():
-	pass
+	pload()
+	dload()
 if __name__ == "__main__":
 	try:
 		main()
