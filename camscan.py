@@ -13,7 +13,7 @@ except ModuleNotFoundError:
 	exit()
 	
 #------------------	
-_version_ = "2.0 release"
+_version_ = "1.0 beta"
 portsfile = "ports.txt"
 hostsfile = "hosts.txt"
 goodip = []
