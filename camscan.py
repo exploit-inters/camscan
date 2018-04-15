@@ -14,11 +14,10 @@ except ModuleNotFoundError:
 
 #------------------
 _version_ = "1.0 beta"
-portsfile = "ports.txt"
 hostsfile = "hosts.txt"
 goodip = []
 diapazons = []
-ports = []
+ports = ['554']
 #------------------
 def restart_program():
 	python = sys.executable
@@ -32,20 +31,12 @@ def dload():
 	f.close()
 	return
 
-def pload():
-	f = open(portsfile, 'r')
-	for line in f:
-		l = line.strip()
-		ports.append(str(l))
-	f.close()
-	return
 def testconstants():
-	print( _version_, portsfile, hostsfile, goodip, diapazons, ports)
+	print( _version_, hostsfile, goodip, diapazons, ports)
 
 
 def main():
 	dload()
-	pload()
 	testconstants()
 
 if __name__ == "__main__":
