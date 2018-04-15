@@ -1,1 +1,2 @@
-testfileforlib
+def test(t):
+	print(t)

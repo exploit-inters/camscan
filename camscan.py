@@ -2,7 +2,8 @@
 import socket
 import subprocess as sp
 import os
-import lib.ipscaner as ips
+from lib.ipscaner import *
+from lib.test import *
 import sys
 import random
 import time as t
@@ -44,7 +45,7 @@ def testip(ip,port):
 
 def main():
 	dload()
-	testconstants()
+	
 
 if __name__ == "__main__":
 	try:
