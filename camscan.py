@@ -37,7 +37,7 @@ def dload():
 	f.close()
 	return
 def ipcheck(ip,port):
-	if ips.scan(ip,port):
+	if scan(ip,port):
 		goodip.append(ip+':'+port)
 		print('found '+ip+' '+port)
 	else:
@@ -63,7 +63,7 @@ def start():
 
 def main():
 	dload()
-	
+	start()
 
 if __name__ == "__main__":
 	try:

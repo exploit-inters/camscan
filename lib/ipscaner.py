@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import socket
 def scan(ip,p):
 	host = str(ip)
 	port = int(p)
