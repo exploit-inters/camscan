@@ -36,12 +36,30 @@ def dload():
 		diapazons.append(str(l))
 	f.close()
 	return
-def testip(ip,port):
+def ipcheck(ip,port):
 	if ips.scan(ip,port):
 		goodip.append(ip+':'+port)
 		print('found '+ip+' '+port)
 	else:
 		print('')
+		
+def start():
+	if diapazons == []:
+		print("diapazons error")
+		t.sleep(0.4)
+		restart_program()
+	print("")
+	for d in diapazons:
+		if d == "\n":
+			break
+			
+		else:
+			print("for " + d)
+			for ip in IPNetwork(d).iter_hosts():
+				t.sleep(0.2)
+				for p in ports:
+					t.sleep(0.1)
+					ipcheck(str(ip),str(p))
 
 def main():
 	dload()
