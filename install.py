@@ -10,9 +10,9 @@ os.system('rm -fr README.md .git/ ')
 print('install finished!\n')
 print('start program? (y or n)')
 a = input().upper()
-if a = 'Y':
+if a == 'Y':
   os.system('python3 camscan.py')
-elif a = 'N':
+elif a == 'N':
   exit()
 exit()
 
