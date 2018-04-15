@@ -37,11 +37,13 @@ def dload():
 	f.close()
 	return
 def ipcheck(ip,port):
+	
 	if scan(ip,port):
-		goodip.append(ip+':'+port)
-		print('found '+ip+' '+port)
+		goodip.append(str(ip)+":"+str(port))
+		print("[+] "+ str(ip)+":"+str(port))
+		
 	else:
-		print('')
+		print("[-] "+ str(ip)+":"+str(port))
 		
 def start():
 	if diapazons == []:
