@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+
 import socket
 import subprocess as sp
 import os
