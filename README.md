@@ -7,6 +7,5 @@ its vnc scaner for python3
 ``` 
 git clone https://github.com/gornostay25/camscan
 cd camscan
-pip install -r requirements.txt 
 python3 install.py 
 ``` 
